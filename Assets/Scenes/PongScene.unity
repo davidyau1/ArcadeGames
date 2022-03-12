@@ -506,6 +506,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317665d2fce67c349bfbb002cfad5450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ball: {fileID: 987755757}
+  leftPlayer: {fileID: 78714941}
+  rightPlayer: {fileID: 1117787631}
+  topWall: {fileID: 895026383}
+  bottomWall: {fileID: 513634546}
+  leftGoal: {fileID: 1639837720}
+  rightGoal: {fileID: 78128258}
 --- !u!4 &549160763
 Transform:
   m_ObjectHideFlags: 0
@@ -790,7 +797,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987755757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.002, y: 0.005, z: 0}
+  m_LocalPosition: {x: 0, y: 0.005, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
