@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Rigidbody2D rb;
+
+    public GameObject Player;
+    public float speed;
+    public Vector3 direction;
+    protected virtual void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

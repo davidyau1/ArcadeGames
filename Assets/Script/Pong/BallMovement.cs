@@ -48,7 +48,12 @@ public class BallMovement : MonoBehaviour
         {
             direction.y *= -1;
         }
-        if (collision.gameObject.tag == "Goal")
+        if (collision.gameObject.tag == "LeftGoal")
+        {
+            direction.x *= -1;
+
+        }
+        if (collision.gameObject.tag == "RightGoal")
         {
             direction.x *= -1;
 
