@@ -29,17 +29,18 @@ public class GameScript : MonoBehaviour
 
 
 
-    void StartRound()
+    public void StartRound()
     {
         Instantiate(ballPrefab, new Vector3(0, 0, 0), Quaternion.identity);
     }
 
-    void ScorePoint(string side)
+    public void ScorePoint(string side)
     {
         if (side=="left")
         {
             leftScore++;
         }
+       
         if (side == "right")
         {
             rightScore++;
