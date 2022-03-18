@@ -61,8 +61,8 @@ public class GameScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        leftScoreText.text = "<color=white>"+leftScore.ToString()+"</color>";
-        rightScoreText.text = "<color=white>" + rightScore.ToString() + "</color>";
+        leftScoreText.text = leftScore.ToString();
+        rightScoreText.text = rightScore.ToString();
 
     }
 }
