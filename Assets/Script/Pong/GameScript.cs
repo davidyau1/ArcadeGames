@@ -13,16 +13,9 @@ public class GameScript : MonoBehaviour
         Pause
 
     }
-    public float playerSpeed;
     public static int leftScore;
     public static int rightScore;
     public GameObject ballPrefab;
-    public GameObject leftPlayer;
-    public GameObject rightPlayer;
-    public GameObject topWall;
-    public GameObject bottomWall;
-    public GameObject leftGoal;
-    public GameObject rightGoal;
     public GameState state;
     public Text leftScoreText;
     public Text rightScoreText;

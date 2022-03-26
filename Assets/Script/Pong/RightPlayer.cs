@@ -14,18 +14,26 @@ public class RightPlayer : PlayerControl
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (!aiOn)
         {
-            direction.y = 1;
+
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                direction.y = 1;
+            }
+            else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                direction.y = -1;
+            }
+            else
+            {
+                direction.y = 0;
+            }
+
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            direction.y = -1;
-        }
-        else
-        {
-            direction.y = 0;
-        }
+     
+       
+    
     }
     private void FixedUpdate()
     {
@@ -36,7 +44,9 @@ public class RightPlayer : PlayerControl
 
         if (aiOn)
         {
-
+            //Vector2 directionToGoal = (ball.position - transform.position);
+            //directionToGoal.Normalize();
+            //transform.position += (Vector3)directionToGoal * speed * Time.deltaTime;
         }
         else
         {

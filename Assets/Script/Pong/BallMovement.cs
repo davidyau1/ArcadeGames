@@ -40,10 +40,12 @@ public class BallMovement : MonoBehaviour
             script.ScorePoint("left");
             if (GameScript.leftScore < 10)
             {
-                Instantiate(gameObject, new Vector3(0, 0, 0), Quaternion.identity);
+                gameObject.transform.position = new Vector3(0, 0, 0);
             }
-            Destroy(gameObject);
-          
+            else
+            {
+                Destroy(gameObject);
+            }
 
         }
         if (collision.gameObject.tag == "RightGoal")
@@ -51,10 +53,13 @@ public class BallMovement : MonoBehaviour
             script.ScorePoint("right");
             if (GameScript.rightScore < 10)
             {
-                Instantiate(gameObject, new Vector3(0, 0, 0), Quaternion.identity);
+                gameObject.transform.position = new Vector3(0, 0, 0);
             }
-            Destroy(gameObject);
-          
+            else
+            {
+                Destroy(gameObject);
+            }
+
 
         }
         if (collision.gameObject.tag == "Player")
